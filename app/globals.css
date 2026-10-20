@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0a0a0f;
+  color: #e5e7eb;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.15);
+}
+.pulse-dot {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
